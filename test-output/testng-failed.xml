@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="2" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.opencart.test.LoginPageTest">
+        <methods>
+          <include name="ComponentsOptionTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+      <class name="com.qa.opencart.test.HomePageTest">
+        <methods>
+          <include name="homepageTitleTest"/>
+          <include name="searchProduct" invocation-numbers="0 1 2"/>
+          <include name="setup"/>
+          <include name="homepageUrlTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.test.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
